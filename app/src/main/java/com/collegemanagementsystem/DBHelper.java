@@ -1,5 +1,5 @@
 
-package com.marwadi.collegemanagementsystem;
+package com.collegemanagementsystem;
 
 import android.content.ContentValues;
 import android.content.Context;
