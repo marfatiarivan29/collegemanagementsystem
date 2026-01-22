@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.collegemanagementsystem">
+
+    <application
+        android:allowBackup="true"
+        android:label="College Management System"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CMS">
+
+        <!-- SPLASH SCREEN -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- LOGIN -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- ADMIN DASHBOARD -->
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+
+        <!-- ADD STUDENT -->
+        <activity
+            android:name=".AddStudentActivity"
+            android:exported="false" />
+
+        <!-- VIEW STUDENTS -->
+        <activity
+            android:name=".ViewStudentsActivity"
+            android:exported="false" />
+
+        <!-- STUDENT DETAIL -->
+        <activity
+            android:name=".StudentDetailActivity"
+            android:exported="false" />
+
+        <!-- ATTENDANCE -->
+        <activity
+            android:name=".AttendanceActivity"
+            android:exported="false" />
+
+        <!-- FEES -->
+        <activity
+            android:name=".FeesActivity"
+            android:exported="false" />
+
+        <!-- NOTICE -->
+        <activity
+            android:name=".NoticeActivity"
+            android:exported="false" />
+
+        <!-- ABOUT / ADMIN PROFILE -->
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+
+        <!-- TODO LIST -->
+        <activity
+            android:name=".TodoActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
