@@ -2,22 +2,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/bg_login">
 
-    <EditText
-        android:id="@+id/edtTask"
+    <!-- HEADER -->
+    <TextView
+        android:text="My Todo List"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- ADD TASK ROW -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Task"/>
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
 
-    <Button
-        android:id="@+id/btnAddTask"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add Task"/>
+        <EditText
+            android:id="@+id/edtTask"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Enter a new task..."
+            android:layout_marginEnd="8dp"/>
 
+        <Button
+            android:id="@+id/btnAddTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:backgroundTint="#FFD180"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Tap to hold to delete a task"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:textColor="#555"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- LIST -->
     <ListView
         android:id="@+id/listTodo"
+        android:background="#80FFFFFF"
+        android:dividerHeight="1dp"
+        android:padding="8dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 </LinearLayout>

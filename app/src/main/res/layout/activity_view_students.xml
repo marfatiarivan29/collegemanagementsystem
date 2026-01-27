@@ -1,23 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="8dp"
+    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
 
-    <!-- Search Box -->
-    <EditText
-        android:id="@+id/edtSearch"
-        android:hint="Search student..."
-        android:drawableLeft="@android:drawable/ic_menu_search"
-        android:padding="12dp"
-        android:layout_width="match_parent"
+    <!-- HEADER -->
+    <TextView
+        android:text="Student List"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    <!-- Search Box Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/btn_bg"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:hint="Search by name or course..."
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
 
     <!-- Student List -->
     <ListView
         android:id="@+id/listStudents"
-        android:layout_marginTop="8dp"
+        android:background="#80FFFFFF"
+        android:dividerHeight="1dp"
+        android:padding="8dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 </LinearLayout>

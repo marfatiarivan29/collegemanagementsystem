@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AdminDashboardActivity extends AppCompatActivity {
 
-    LinearLayout cardAddStudent, cardViewStudents, cardNotice, cardLogout;
+    LinearLayout cardAddStudent, cardViewStudents, cardNotice, cardLogout, cardTodo;
     ImageView imgAdminProfile;
 
     @Override
@@ -22,6 +22,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
         cardViewStudents = findViewById(R.id.cardViewStudents);
         cardNotice = findViewById(R.id.cardNotice);
         cardLogout = findViewById(R.id.cardLogout);
+        cardTodo = findViewById(R.id.cardTodo);
 
         // Profile Icon
         imgAdminProfile = findViewById(R.id.imgAdminProfile);
@@ -43,6 +44,10 @@ public class AdminDashboardActivity extends AppCompatActivity {
             startActivity(new Intent(this, LoginActivity.class));
             finish();
         });
+
+        // TODO LIST
+        cardTodo.setOnClickListener(v ->
+                startActivity(new Intent(this, TodoActivity.class)));
 
         // ADMIN PROFILE CLICK
         imgAdminProfile.setOnClickListener(v ->

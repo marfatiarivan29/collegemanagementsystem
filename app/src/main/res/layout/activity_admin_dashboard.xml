@@ -149,6 +149,32 @@
 
         </LinearLayout>
 
+        <!-- TODO -->
+        <LinearLayout
+            android:id="@+id/cardTodo"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/btn_bg"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_my_calendar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todo List"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
     </GridLayout>
 
 </LinearLayout>

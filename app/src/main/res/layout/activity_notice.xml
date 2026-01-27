@@ -2,26 +2,56 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/bg_login">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- HEADER -->
         <TextView
             android:text="College Notices"
-            android:textSize="22sp"
+            android:textSize="24sp"
             android:textStyle="bold"
-            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="24dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <TextView
-            android:text="• Mid-2 exams start from 9th February \n\n• College will remain closed on 10th and 11th January"
-            android:textSize="16sp"
+        <!-- NOTICE CARD -->
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/btn_bg"
+            android:elevation="4dp">
+
+            <TextView
+                android:text="Latest Announcements"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="12dp"
+                android:textColor="#333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="#AAA"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:text="• Mid-2 exams start from 9th February \n\n• College will remain closed on 10th and 11th January"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
