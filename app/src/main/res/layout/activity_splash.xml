@@ -5,10 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:src="@drawable/app_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="24dp"/>
+
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="College Management System"
         android:textColor="@android:color/white"
-        android:textSize="24sp"/>
+        android:textSize="24sp"
+        android:textStyle="bold"/>
 </LinearLayout>
