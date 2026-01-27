@@ -5,8 +5,8 @@
     <application
         android:allowBackup="true"
         android:label="College Management System"
-        android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/app_logo"
+        android:roundIcon="@drawable/app_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.CMS">
 
